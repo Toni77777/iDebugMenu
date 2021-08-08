@@ -7,6 +7,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "Anton Paliakov" => "toxa95401@gmail.com" }
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/Toni77777/iDebugMenu.git", :tag => "#{spec.version}" }
-  spec.source_files  = "PinAnchor/*.swift"
+  spec.source_files  = "iDebugMenu/*.swift"
   spec.swift_version = "4.2"
 end
