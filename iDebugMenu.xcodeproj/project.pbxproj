@@ -10,6 +10,7 @@
 		00BC499C26C06A22003FC4E8 /* iDebugMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BC499226C06A22003FC4E8 /* iDebugMenu.framework */; };
 		00BC49A126C06A22003FC4E8 /* iDebugMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC49A026C06A22003FC4E8 /* iDebugMenuTests.swift */; };
 		00BC49A326C06A22003FC4E8 /* iDebugMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 00BC499526C06A22003FC4E8 /* iDebugMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		00BC499B26C06A22003FC4E8 /* iDebugMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDebugMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BC49A026C06A22003FC4E8 /* iDebugMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDebugMenuTests.swift; sourceTree = "<group>"; };
 		00BC49A226C06A22003FC4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				00BC499526C06A22003FC4E8 /* iDebugMenu.h */,
 				00BC499626C06A22003FC4E8 /* Info.plist */,
+				00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */,
 			);
 			path = iDebugMenu;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					00BC499126C06A22003FC4E8 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					00BC499A26C06A22003FC4E8 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		00BC49A726C06A22003FC4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -358,6 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		00BC49A826C06A22003FC4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -391,6 +399,7 @@
 		00BC49AA26C06A22003FC4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = iDebugMenuTests/Info.plist;
@@ -409,6 +418,7 @@
 		00BC49AB26C06A22003FC4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = iDebugMenuTests/Info.plist;
