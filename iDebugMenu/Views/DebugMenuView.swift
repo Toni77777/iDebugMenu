@@ -16,10 +16,12 @@ struct DebugMenuView: View {
     // MARK: - Body
     
     var body: some View {
-        List(menuItems) { item in
-            Text(item.title)
-                .font(.title)
+        NavigationView {
+            List(menuItems) { item in
+                MenuView(title: item.title)
+            }
         }
+        .navigationBarTitle("Debug Menu")
     }
 }
 

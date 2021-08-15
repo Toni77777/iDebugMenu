@@ -15,6 +15,7 @@
 		00F8593426C9781F002BF603 /* NSNotification+DebugMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593326C9781F002BF603 /* NSNotification+DebugMenu.swift */; };
 		00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593826C97865002BF603 /* DebugMenuView.swift */; };
 		00F8594026C97A2F002BF603 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593F26C97A2F002BF603 /* MenuItem.swift */; };
+		00F8595026C9B150002BF603 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8594F26C9B150002BF603 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		00F8593326C9781F002BF603 /* NSNotification+DebugMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+DebugMenu.swift"; sourceTree = "<group>"; };
 		00F8593826C97865002BF603 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
 		00F8593F26C97A2F002BF603 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		00F8594F26C9B150002BF603 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		00F8593726C97853002BF603 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				00F8594F26C9B150002BF603 /* MenuView.swift */,
 				00F8593826C97865002BF603 /* DebugMenuView.swift */,
 			);
 			path = Views;
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F8592E26C97804002BF603 /* UIWindow+DebugMenu.swift in Sources */,
+				00F8595026C9B150002BF603 /* MenuView.swift in Sources */,
 				00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */,
 				00F8593426C9781F002BF603 /* NSNotification+DebugMenu.swift in Sources */,
 				00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */,
