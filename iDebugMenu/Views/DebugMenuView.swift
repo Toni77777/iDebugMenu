@@ -9,8 +9,17 @@ import SwiftUI
 
 struct DebugMenuView: View {
     
+    // MARK: - Properties
+    
+    let menuItems = MenuItem.allCases
+    
+    // MARK: - Body
+    
     var body: some View {
-        Text("Debug Menu")
+        List(menuItems) { item in
+            Text(item.title)
+                .font(.title)
+        }
     }
 }
 
