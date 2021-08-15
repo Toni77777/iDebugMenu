@@ -18,10 +18,21 @@ struct DebugMenuView: View {
     var body: some View {
         NavigationView {
             List(menuItems) { item in
-                MenuView(title: item.title)
+                NavigationLink(destination: menuDetailView(item)) {
+                    MenuView(title: item.title)
+                }
             }
+            .navigationBarTitle("Debug Menu")
         }
-        .navigationBarTitle("Debug Menu")
+    }
+    
+    @ViewBuilder
+    private func menuDetailView(_ menuItem: MenuItem) -> some View {
+        switch menuItem {
+        case .console: ConsoleView()
+        case .network: NetworkView()
+        case .actions: CustomActionsView()
+        }
     }
 }
 

@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct MenuView: View {
+    
+    // MARK: - Properties
+    
     let title: String
     
+    // MARK: - Body
+    
     var body: some View {
-        HStack {
-            Text(title)
-                .font(.system(size: 18))
-            Spacer()
-            Image(systemName: "chevron.right")
-        }
-        .frame(height: 34)
+        Text(title)
+            .font(.system(size: 18))
+            .frame(height: 34)
     }
 }
 

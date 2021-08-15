@@ -16,6 +16,9 @@
 		00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593826C97865002BF603 /* DebugMenuView.swift */; };
 		00F8594026C97A2F002BF603 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593F26C97A2F002BF603 /* MenuItem.swift */; };
 		00F8595026C9B150002BF603 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8594F26C9B150002BF603 /* MenuView.swift */; };
+		00F8595926C9CFED002BF603 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8595826C9CFED002BF603 /* ConsoleView.swift */; };
+		00F8596026C9D01F002BF603 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8595F26C9D01F002BF603 /* NetworkView.swift */; };
+		00F8596726C9D050002BF603 /* CustomActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8596626C9D050002BF603 /* CustomActionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		00F8593826C97865002BF603 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
 		00F8593F26C97A2F002BF603 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		00F8594F26C9B150002BF603 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		00F8595826C9CFED002BF603 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
+		00F8595F26C9D01F002BF603 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		00F8596626C9D050002BF603 /* CustomActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 		00F8593726C97853002BF603 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				00F8596526C9D03E002BF603 /* CustomAction */,
+				00F8595E26C9D012002BF603 /* Network */,
+				00F8595726C9CFDE002BF603 /* Console */,
 				00F8594F26C9B150002BF603 /* MenuView.swift */,
 				00F8593826C97865002BF603 /* DebugMenuView.swift */,
 			);
@@ -126,6 +135,30 @@
 				00F8593F26C97A2F002BF603 /* MenuItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		00F8595726C9CFDE002BF603 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				00F8595826C9CFED002BF603 /* ConsoleView.swift */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		00F8595E26C9D012002BF603 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				00F8595F26C9D01F002BF603 /* NetworkView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		00F8596526C9D03E002BF603 /* CustomAction */ = {
+			isa = PBXGroup;
+			children = (
+				00F8596626C9D050002BF603 /* CustomActionsView.swift */,
+			);
+			path = CustomAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F8592E26C97804002BF603 /* UIWindow+DebugMenu.swift in Sources */,
+				00F8596026C9D01F002BF603 /* NetworkView.swift in Sources */,
 				00F8595026C9B150002BF603 /* MenuView.swift in Sources */,
+				00F8596726C9D050002BF603 /* CustomActionsView.swift in Sources */,
 				00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */,
 				00F8593426C9781F002BF603 /* NSNotification+DebugMenu.swift in Sources */,
+				00F8595926C9CFED002BF603 /* ConsoleView.swift in Sources */,
 				00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */,
 				00F8594026C97A2F002BF603 /* MenuItem.swift in Sources */,
 			);
