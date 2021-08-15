@@ -13,6 +13,7 @@ struct ConsoleView: View {
     
     var body: some View {
         Text("ConsoleView")
+            .navigationBarTitle("Console", displayMode: .inline)
     }
 }
 

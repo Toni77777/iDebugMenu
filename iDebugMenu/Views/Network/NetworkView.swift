@@ -13,6 +13,7 @@ struct NetworkView: View {
     
     var body: some View {
         Text("NetworkView")
+            .navigationBarTitle("Network", displayMode: .inline)
     }
 }
 

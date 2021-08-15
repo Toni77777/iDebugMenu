@@ -13,6 +13,7 @@ struct CustomActionsView: View {
     
     var body: some View {
         Text("CustomActionsView")
+            .navigationBarTitle("Custom Actions", displayMode: .inline)
     }
 }
 
