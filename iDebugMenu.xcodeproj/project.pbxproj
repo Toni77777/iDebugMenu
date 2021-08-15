@@ -11,6 +11,9 @@
 		00BC49A126C06A22003FC4E8 /* iDebugMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC49A026C06A22003FC4E8 /* iDebugMenuTests.swift */; };
 		00BC49A326C06A22003FC4E8 /* iDebugMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 00BC499526C06A22003FC4E8 /* iDebugMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */; };
+		00F8592E26C97804002BF603 /* UIWindow+DebugMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8592D26C97804002BF603 /* UIWindow+DebugMenu.swift */; };
+		00F8593426C9781F002BF603 /* NSNotification+DebugMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593326C9781F002BF603 /* NSNotification+DebugMenu.swift */; };
+		00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8593826C97865002BF603 /* DebugMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		00BC49A026C06A22003FC4E8 /* iDebugMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDebugMenuTests.swift; sourceTree = "<group>"; };
 		00BC49A226C06A22003FC4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenu.swift; sourceTree = "<group>"; };
+		00F8592D26C97804002BF603 /* UIWindow+DebugMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+DebugMenu.swift"; sourceTree = "<group>"; };
+		00F8593326C9781F002BF603 /* NSNotification+DebugMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+DebugMenu.swift"; sourceTree = "<group>"; };
+		00F8593826C97865002BF603 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 		00BC499426C06A22003FC4E8 /* iDebugMenu */ = {
 			isa = PBXGroup;
 			children = (
+				00F8593726C97853002BF603 /* Views */,
+				00F8592C26C977F0002BF603 /* Extensions */,
 				00BC499526C06A22003FC4E8 /* iDebugMenu.h */,
 				00BC499626C06A22003FC4E8 /* Info.plist */,
 				00BC49B226C06EAD003FC4E8 /* DebugMenu.swift */,
@@ -87,6 +95,23 @@
 				00BC49A226C06A22003FC4E8 /* Info.plist */,
 			);
 			path = iDebugMenuTests;
+			sourceTree = "<group>";
+		};
+		00F8592C26C977F0002BF603 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00F8592D26C97804002BF603 /* UIWindow+DebugMenu.swift */,
+				00F8593326C9781F002BF603 /* NSNotification+DebugMenu.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00F8593726C97853002BF603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00F8593826C97865002BF603 /* DebugMenuView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F8592E26C97804002BF603 /* UIWindow+DebugMenu.swift in Sources */,
+				00F8593926C97865002BF603 /* DebugMenuView.swift in Sources */,
+				00F8593426C9781F002BF603 /* NSNotification+DebugMenu.swift in Sources */,
 				00BC49B326C06EAD003FC4E8 /* DebugMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
